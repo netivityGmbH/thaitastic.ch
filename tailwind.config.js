@@ -15,7 +15,7 @@ export default {
                 serif: ['Rakkas', ...defaultTheme.fontFamily.serif],
             },
             colors: {
-                primary: '#FDFADB',
+                primary: '#C8B568',
             },
         },
     },
