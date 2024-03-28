@@ -12,7 +12,10 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                serif: ['Rakkas', ...defaultTheme.fontFamily.serif],
+            },
+            colors: {
+                primary: '#FDFADB',
             },
         },
     },
