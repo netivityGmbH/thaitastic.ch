@@ -2,7 +2,7 @@
     @scroll.window="brightness = Math.min(100, 50 + window.scrollY / 5)" style="scroll-behavior: smooth;">
     <div class="relative z-10 flex flex-col items-center justify-center px-4 pt-12">
         <img src="/media/logo.svg" alt="Logo" class="w-56">
-        <h1 class="mb-4 text-center font-serif text-6xl text-primary">ThaiTastic Bites</h1>
+        <h1 class="mb-4 text-center font-serif text-5xl text-primary sm:text-6xl">ThaiTastic Bites</h1>
         <p class="font-serif uppercase text-primary md:text-xl">Dein Ticket für einen Geschmacks-Rave</p>
     </div>
 

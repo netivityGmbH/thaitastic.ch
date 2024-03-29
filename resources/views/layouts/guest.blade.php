@@ -19,6 +19,8 @@
 
 <body class="bg-black antialiased">
     {{ $slot }}
+
+    <x-layout.footer />
 </body>
 
 </html>

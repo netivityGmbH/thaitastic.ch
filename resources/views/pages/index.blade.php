@@ -1,3 +1,9 @@
+<?php
+use function Laravel\Folio\name;
+
+name('welcome');
+?>
+
 <x-guest-layout>
     <x-partials.welcome-section />
 

@@ -9,10 +9,10 @@ $save = function () {
 };
 ?>
 
-<div class="flex w-96 flex-col px-4">
+<div class="flex w-96 flex-col px-4 sm:px-0">
     <form wire:submit="save" class="flex flex-col gap-4">
         <div>
-            <x-input-label for="name" value="Natel" />
+            <x-input-label for="name" value="Vollständiger Name" />
             <x-text-input type="text" wire:model="form.name" id="name" />
             @error('form.name')
                 <span class="text-red-400">{{ $message }}</span>

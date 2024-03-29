@@ -8,7 +8,7 @@ state(['menu_items' => MenuItem::all()]);
 <div>
     <ul class="flex flex-col gap-8 font-serif text-primary">
         @foreach ($menu_items as $item)
-            <li wire:key="{{ $item->id }}" class="px-4">
+            <li wire:key="{{ $item->id }}" class="px-4 sm:px-0">
                 <div class="flex items-center justify-between">
                     <span class="text-xl font-bold">
                         {{ $item->name }}
