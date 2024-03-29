@@ -10,21 +10,25 @@ class MenuItem extends Model {
     protected $rows = [
         [
             'id' => 1,
-            'name' => 'Thai Sub 1',
+            'name' => 'Grapau Fusion Bites',
             'description' => 'Pepperoni, Sausage, Mushrooms, Green Peppers, Onions',
             'price' => '1.00',
         ],
         [
             'id' => 2,
-            'name' => 'Thai Sub 2',
+            'name' => 'Namtok Spice Twist',
             'description' => 'Pepperoni, Sausage, Mushrooms, Green Peppers, Onions',
             'price' => '2.00',
         ],
         [
             'id' => 3,
-            'name' => 'Thai Sub 3',
+            'name' => 'Banh Mi Delight',
             'description' => 'Pepperoni, Sausage, Mushrooms, Green Peppers, Onions',
             'price' => '3.00',
         ],
     ];
+
+    public function getFormattedPriceAttribute() {
+        return 'CHF ' . number_format($this->price, 2, '.', '') . '.-';
+    }
 }

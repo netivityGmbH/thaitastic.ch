@@ -8,7 +8,7 @@
         </div>
 
         <div class="absolute bottom-4 left-0 right-0 z-10 flex justify-center">
-            <a href="#contact">
+            <a href="#menu">
                 <img src="/media/scroll.gif" alt="Scroll"
                     class="size-16 transition-all duration-300 ease-in-out hover:-translate-y-1"></a>
 

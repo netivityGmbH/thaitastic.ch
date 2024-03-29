@@ -9,7 +9,7 @@ $save = function () {
 };
 ?>
 
-<div class="flex w-96 flex-col">
+<div class="flex w-96 flex-col px-4">
     <form wire:submit="save" class="flex flex-col gap-4">
         <div>
             <x-text-input type="text" wire:model="form.name" placeholder="Vollständiger Name" />
