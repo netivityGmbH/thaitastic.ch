@@ -14,7 +14,7 @@ state(['menu_items' => MenuItem::all()]);
                         {{ $item->name }}
                     </span>
 
-                    <span class="underline">
+                    <span class="tracking-wide underline underline-offset-4">
                         {{ $item->formatted_price }}
                     </span>
                 </div>

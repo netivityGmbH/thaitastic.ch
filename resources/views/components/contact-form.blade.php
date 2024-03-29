@@ -12,35 +12,40 @@ $save = function () {
 <div class="flex w-96 flex-col px-4">
     <form wire:submit="save" class="flex flex-col gap-4">
         <div>
-            <x-text-input type="text" wire:model="form.name" placeholder="Vollständiger Name" />
+            <x-input-label for="name" value="Natel" />
+            <x-text-input type="text" wire:model="form.name" id="name" />
             @error('form.name')
                 <span class="text-red-400">{{ $message }}</span>
             @enderror
         </div>
 
         <div>
-            <x-text-input type="email" wire:model="form.email" placeholder="Email-Adresse" />
+            <x-input-label for="email" value="Email" />
+            <x-text-input type="email" wire:model="form.email" id="email" />
             @error('form.email')
                 <span class="text-red-400">{{ $message }}</span>
             @enderror
         </div>
 
         <div>
-            <x-text-input type="text" wire:model="form.mobile" placeholder="Natelnummer" />
+            <x-input-label for="mobile" value="Handy" />
+            <x-text-input type="text" wire:model="form.mobile" id="mobile" />
             @error('form.mobile')
                 <span class="text-red-400">{{ $message }}</span>
             @enderror
         </div>
 
         <div>
-            <x-text-input type="text" wire:model="form.landline" placeholder="Festnetz" />
+            <x-input-label for="landline" value="Festnetz" />
+            <x-text-input type="text" wire:model="form.landline" id="landline" />
             @error('form.landline')
                 <span class="text-red-400">{{ $message }}</span>
             @enderror
         </div>
 
         <div>
-            <x-text-area wire:model="form.message" placeholder="Nachricht" />
+            <x-input-label for="message" value="Nachricht" />
+            <x-text-area wire:model="form.message" id="message" />
             @error('form.message')
                 <span class="text-red-400">{{ $message }}</span>
             @enderror
