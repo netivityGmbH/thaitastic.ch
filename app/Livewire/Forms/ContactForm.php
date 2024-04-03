@@ -2,6 +2,8 @@
 
 namespace App\Livewire\Forms;
 
+use App\Mail\ContactFormSubmission;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
 
@@ -24,6 +26,6 @@ class ContactForm extends Form {
     public function email() {
         $this->validate();
 
-        dd($this->all());
+        Mail::to('info@thaitastic.ch')->send(new ContactFormSubmission($this->all()));
     }
 }
