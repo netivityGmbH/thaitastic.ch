@@ -11,19 +11,19 @@ class MenuItem extends Model {
         [
             'id' => 1,
             'name' => 'Grapau Fusion Bites',
-            'description' => 'Pepperoni, Sausage, Mushrooms, Green Peppers, Onions',
+            'description' => '',
             'price' => '1.00',
         ],
         [
             'id' => 2,
             'name' => 'Namtok Spice Twist',
-            'description' => 'Pepperoni, Sausage, Mushrooms, Green Peppers, Onions',
+            'description' => '',
             'price' => '2.00',
         ],
         [
             'id' => 3,
             'name' => 'Banh Mi Delight',
-            'description' => 'Pepperoni, Sausage, Mushrooms, Green Peppers, Onions',
+            'description' => '',
             'price' => '3.00',
         ],
     ];
