@@ -13,7 +13,7 @@
     </div>
 
     <div class="absolute bottom-0 left-0 right-0 overflow-x-hidden">
-        <img src="/media/background.png" alt="Background" class="h-dvh object-none sm:h-auto sm:object-fill"
+        <img src="/media/background.webp" alt="Background" class="h-dvh w-full object-none sm:h-auto sm:object-fill"
             :style="`filter: brightness(${brightness}%)`">
     </div>
 </section>
